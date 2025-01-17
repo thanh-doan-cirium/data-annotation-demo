@@ -14,8 +14,8 @@ public class Employee
     [EmailAddress]
     public string? Email { get; init; }
 
-    [RegularExpression("^([0-9]{5})$")]
-    public string? ZipCode { get; init; }
+    [RegularExpression("^[A-Z]{1,2}[0-9R][0-9A-Z]? [0-9][ABD-HJLNP-UW-Z]{2}$")]
+    public string? PostCode { get; init; }
 
     [DataType(DataType.Date), Required, EmployeeDateOfBirthValidation]
     public DateTime DateOfBirth { get; init; }
