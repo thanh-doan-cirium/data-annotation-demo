@@ -1,7 +1,7 @@
 using DataValidation.Exceptions;
 using DataValidation.Models;
 
-namespace DataValidation.Services;
+namespace DataValidation.Validations;
 
 public class PaymentValidator : IPaymentValidator
 {

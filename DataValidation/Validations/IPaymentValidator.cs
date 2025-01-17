@@ -1,6 +1,6 @@
 using DataValidation.Models;
 
-namespace DataValidation.Services;
+namespace DataValidation.Validations;
 
 public interface IPaymentValidator
 {

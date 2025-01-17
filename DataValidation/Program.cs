@@ -1,4 +1,5 @@
 using DataValidation.Services;
+using DataValidation.Validations;
 
 var builder = WebApplication.CreateBuilder(args);
 

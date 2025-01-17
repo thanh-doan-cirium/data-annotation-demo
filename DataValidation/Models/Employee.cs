@@ -5,11 +5,15 @@ namespace DataValidation.Models;
 
 public class Employee
 {
+    [Display(Name = "First Name")]
     [Required, MinLength(3), MaxLength(30)]
     public string? FirstName { get; init; }
 
     [Required, MinLength(3), MaxLength(50)]
     public string? Surname { get; init; }
+
+    [Range(18, 60, ErrorMessage = "Age must be between 18 and 60.")]
+    public int Age { get; set; }
 
     [EmailAddress]
     public string? Email { get; init; }
